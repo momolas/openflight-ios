@@ -38,41 +38,24 @@ struct MetricLogsListCellView: View {
     /// The View's body.
     var body: some View {
         ZStack {
-            // MARK: iOS 15 and higher.
-            if #available(iOS 15.0, *) {
-                Text(url.lastPathComponent)
-                    .foregroundStyle(url.filenameColor)
-                    .swipeActions(allowsFullSwipe: false) {
-                        // Share button.
-                        Button {
-                            UIApplication.export(url: url)
-                        } label: {
-                            Label("Share", systemImage: "square.and.arrow.up")
-                        }
-                        .tint(.indigo)
-
-                        // Delete button.
-                        Button(role: .destructive) {
-                            metricKitService.deleteLogs(at: [url])
-                        } label: {
-                            Label("Delete", systemImage: "trash.fill")
-                        }
-                    }
-            } else {
-                // MARK: < iOS 15.
-                HStack {
-                    Text(url.lastPathComponent)
-                        .foregroundStyle(url.filenameColor)
-                    Spacer()
-                    // Export button.
+            Text(url.lastPathComponent)
+                .foregroundStyle(url.filenameColor)
+                .swipeActions(allowsFullSwipe: false) {
+                    // Share button.
                     Button {
                         UIApplication.export(url: url)
                     } label: {
-                        Image(systemName: "square.and.arrow.up")
+                        Label("Share", systemImage: "square.and.arrow.up")
                     }
-                    // Note: Item deletion is handled directly in the list using this cell.
+                    .tint(.indigo)
+
+                    // Delete button.
+                    Button(role: .destructive) {
+                        metricKitService.deleteLogs(at: [url])
+                    } label: {
+                        Label("Delete", systemImage: "trash.fill")
+                    }
                 }
-            }
         }
     }
 }
