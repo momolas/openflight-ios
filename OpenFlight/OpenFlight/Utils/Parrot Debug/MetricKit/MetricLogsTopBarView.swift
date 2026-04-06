@@ -64,7 +64,7 @@ struct MetricLogsTopBarView: View {
                 Button("Delete all logs") {
                     isPresentingConfirm.toggle()
                 }
-                .foregroundColor(isLogsDirectoryEmpty ? .gray : .red)
+                .foregroundStyle(isLogsDirectoryEmpty ? .gray : .red)
                 .disabled(isLogsDirectoryEmpty)
                 .confirmationDialog("Are you sure?",
                                     isPresented: $isPresentingConfirm) {
@@ -77,7 +77,7 @@ struct MetricLogsTopBarView: View {
                 Button("Delete all logs") {
                     metricKitService.clearLogs()
                 }
-                .foregroundColor(isLogsDirectoryEmpty ? .gray : .red)
+                .foregroundStyle(isLogsDirectoryEmpty ? .gray : .red)
                 .disabled(isLogsDirectoryEmpty)
             }
         }

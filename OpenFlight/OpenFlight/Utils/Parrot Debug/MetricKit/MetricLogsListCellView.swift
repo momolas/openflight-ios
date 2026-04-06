@@ -41,7 +41,7 @@ struct MetricLogsListCellView: View {
             // MARK: iOS 15 and higher.
             if #available(iOS 15.0, *) {
                 Text(url.lastPathComponent)
-                    .foregroundColor(url.filenameColor)
+                    .foregroundStyle(url.filenameColor)
                     .swipeActions(allowsFullSwipe: false) {
                         // Share button.
                         Button {
@@ -62,7 +62,7 @@ struct MetricLogsListCellView: View {
                 // MARK: < iOS 15.
                 HStack {
                     Text(url.lastPathComponent)
-                        .foregroundColor(url.filenameColor)
+                        .foregroundStyle(url.filenameColor)
                     Spacer()
                     // Export button.
                     Button {
