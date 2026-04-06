@@ -58,28 +58,17 @@ struct MetricLogsTopBarView: View {
 
             // Delete All Logs button.
             // /!\ Confirmation dialog is only supported starting iOS 15.
-            // Earlier versions will delete logs immediately.
-            if #available(iOS 15.0, *) {
-                // MARK: iOS 15 and higher.
-                Button("Delete all logs") {
-                    isPresentingConfirm.toggle()
-                }
-                .foregroundColor(isLogsDirectoryEmpty ? .gray : .red)
-                .disabled(isLogsDirectoryEmpty)
-                .confirmationDialog("Are you sure?",
-                                    isPresented: $isPresentingConfirm) {
-                    Button("Delete all logs?", role: .destructive) {
-                        metricKitService.clearLogs()
-                    }
-                } message: { Text("This action can't be undone") }
-            } else {
-                // MARK: < iOS 15.
-                Button("Delete all logs") {
+            Button("Delete all logs") {
+                isPresentingConfirm.toggle()
+            }
+            .foregroundStyle(isLogsDirectoryEmpty ? .gray : .red)
+            .disabled(isLogsDirectoryEmpty)
+            .confirmationDialog("Are you sure?",
+                                isPresented: $isPresentingConfirm) {
+                Button("Delete all logs?", role: .destructive) {
                     metricKitService.clearLogs()
                 }
-                .foregroundColor(isLogsDirectoryEmpty ? .gray : .red)
-                .disabled(isLogsDirectoryEmpty)
-            }
+            } message: { Text("This action can't be undone") }
         }
         .padding(.top, 5)
         // Update delete button when log list change.

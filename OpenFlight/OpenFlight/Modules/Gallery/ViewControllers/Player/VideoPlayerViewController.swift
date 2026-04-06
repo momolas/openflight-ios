@@ -138,7 +138,7 @@ final class VideoPlayerViewController: UIViewController, MediaContainer {
 
         viewModel.seekTo(0)
         autoPlayTask = Task {
-            try await Task.sleep(nanoseconds: UInt64(Constants.autoPlayDelay * 1_000_000_000))
+            try await Task.sleep(for: .seconds(Constants.autoPlayDelay))
             try Task.checkCancellation()
             viewModel.playVideo()
         }

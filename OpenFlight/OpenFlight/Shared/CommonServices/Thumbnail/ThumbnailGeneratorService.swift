@@ -216,7 +216,7 @@ private extension ThumbnailGeneratorServiceImpl {
                         ULog.i(.tag, "🌉🟢 requestFlightThumbnails with uuid \(flight.uuid) OK")
                     } else {
                         ULog.i(.tag, "🌉🟠 requestFlightThumbnails: Unknown location")
-                        try await Task.sleep(nanoseconds: Constants.noLocationTimeout)
+                        try await Task.sleep(for: .nanoseconds(Constants.noLocationTimeout))
                     }
 
                     try Task.checkCancellation()
@@ -281,7 +281,7 @@ private extension ThumbnailGeneratorServiceImpl {
                         ULog.i(.tag, "🌉🟢 requestFlightPlanThumbnails with uuid: \(flightPlan.uuid) OK")
                     } else {
                         ULog.i(.tag, "🌉🟠 requestFlightPlanThumbnails: Unknown location")
-                        try await Task.sleep(nanoseconds: Constants.noLocationTimeout)
+                        try await Task.sleep(for: .nanoseconds(Constants.noLocationTimeout))
                     }
 
                     try Task.checkCancellation()
