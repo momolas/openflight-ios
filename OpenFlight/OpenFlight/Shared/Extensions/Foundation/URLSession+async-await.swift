@@ -29,33 +29,5 @@
 
 import Foundation
 
-/// `URLSession` extension dedicated to handle `async-await` tasks on devices running before `iOS 15`.
+// Note: Native `URLSession.shared.data(from:)` and `URLSession.shared.data(for:)` are built into Foundation on iOS 15+ / iOS 26+.
 
-@available(iOS, deprecated: 15.0, message: "You must use the built-in API instead")
-public extension URLSession {
-    func data(from url: URL) async throws -> (Data, URLResponse) {
-         try await withCheckedThrowingContinuation { continuation in
-            let task = self.dataTask(with: url) { data, response, error in
-                 guard let data = data, let response = response else {
-                     let error = error ?? URLError(.badServerResponse)
-                     return continuation.resume(throwing: error)
-                 }
-                 continuation.resume(returning: (data, response))
-             }
-             task.resume()
-        }
-    }
-
-    func data(from request: URLRequest) async throws -> (Data, URLResponse) {
-         try await withCheckedThrowingContinuation { continuation in
-             let task = self.dataTask(with: request) { data, response, error in
-                 guard let data = data, let response = response else {
-                     let error = error ?? URLError(.badServerResponse)
-                     return continuation.resume(throwing: error)
-                 }
-                 continuation.resume(returning: (data, response))
-             }
-             task.resume()
-        }
-    }
-}

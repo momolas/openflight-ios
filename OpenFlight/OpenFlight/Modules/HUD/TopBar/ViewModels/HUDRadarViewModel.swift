@@ -152,13 +152,6 @@ private extension HUDRadarViewModel {
 
     /// Starts DeviceMotion tracking when remoteControl is not connected.
     func startDeviceMotionIfNeeded() {
-        #if DEBUG
-        // disable device motion updates due to CoreMotion's
-        // thread issues with iPhones XR/XS running iOS 12
-        guard #available(iOS 13, *) else {
-            return
-        }
-        #endif
         state.value.remoteControlConnectionState?.isConnected() == true ? stopTracking() : startTracking()
     }
 

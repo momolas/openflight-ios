@@ -37,26 +37,24 @@ struct MetricLogsListCellView: View {
 
     /// The View's body.
     var body: some View {
-        ZStack {
-            Text(url.lastPathComponent)
-                .foregroundStyle(url.filenameColor)
-                .swipeActions(allowsFullSwipe: false) {
-                    // Share button.
-                    Button {
-                        UIApplication.export(url: url)
-                    } label: {
-                        Label("Share", systemImage: "square.and.arrow.up")
-                    }
-                    .tint(.indigo)
-
-                    // Delete button.
-                    Button(role: .destructive) {
-                        metricKitService.deleteLogs(at: [url])
-                    } label: {
-                        Label("Delete", systemImage: "trash.fill")
-                    }
+        Text(url.lastPathComponent)
+            .foregroundStyle(url.filenameColor)
+            .swipeActions(allowsFullSwipe: false) {
+                // Share button.
+                Button {
+                    UIApplication.export(url: url)
+                } label: {
+                    Label("Share", systemImage: "square.and.arrow.up")
                 }
-        }
+                .tint(.indigo)
+
+                // Delete button.
+                Button(role: .destructive) {
+                    metricKitService.deleteLogs(at: [url])
+                } label: {
+                    Label("Delete", systemImage: "trash.fill")
+                }
+            }
     }
 }
 
@@ -76,9 +74,9 @@ private extension URL {
 }
 
 // MARK: - Preview
-struct MetricLogsListCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        MetricLogsListCellView(metricKitService: Services.hub.systemServices.metricKitService,
-                               url: URL(string: "logs/Metric_2023-02-18-002958.metric")!)
-    }
+#Preview {
+    MetricLogsListCellView(
+        metricKitService: Services.hub.systemServices.metricKitService,
+        url: URL(fileURLWithPath: "logs/Metric_2023-02-18-002958.metric")
+    )
 }

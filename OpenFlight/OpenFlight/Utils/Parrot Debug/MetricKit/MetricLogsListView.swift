@@ -61,8 +61,6 @@ struct MetricLogsListView: View {
 }
 
 // MARK: - Preview
-struct MetricLogsListView_Previews: PreviewProvider {
-    static var previews: some View {
-        MetricLogsListView(metricKitService: Services.hub.systemServices.metricKitService)
-    }
+#Preview {
+    MetricLogsListView(metricKitService: Services.hub.systemServices.metricKitService)
 }

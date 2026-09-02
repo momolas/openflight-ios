@@ -80,8 +80,6 @@ struct MetricLogsTopBarView: View {
 }
 
 // MARK: - Preview
-struct MetricLogsTopBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        MetricLogsTopBarView(metricKitService: Services.hub.systemServices.metricKitService)
-    }
+#Preview {
+    MetricLogsTopBarView(metricKitService: Services.hub.systemServices.metricKitService)
 }

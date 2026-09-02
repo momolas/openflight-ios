@@ -33,8 +33,6 @@ import SwiftUI
 import SwiftyUserDefaults
 
 struct MetricLogsView: View {
-    /// Dedicated to dismiss the view.
-    @Environment(\.dismiss) var dismiss
     /// The MetricKit service.
     let metricKitService = Services.hub.systemServices.metricKitService
     /// Whether the Metric logging is enabled.
@@ -52,7 +50,9 @@ struct MetricLogsView: View {
                 // Metric Logging switch.
                 Section {
                     Toggle("Enable Metric logging", isOn: $isLoggingEnabled)
-                        .onChange(of: isLoggingEnabled) { enableLogging($0) }
+                        .onChange(of: isLoggingEnabled) { _, newValue in
+                            enableLogging(newValue)
+                        }
                 }
                 // Logs list.
                 Section {
@@ -87,8 +87,6 @@ class MetricLogsHostingController: UIHostingController<MetricLogsView> {
 }
 
 // MARK: - Preview
-struct MetricLogsView_Previews: PreviewProvider {
-    static var previews: some View {
-        MetricLogsView()
-    }
+#Preview {
+    MetricLogsView()
 }

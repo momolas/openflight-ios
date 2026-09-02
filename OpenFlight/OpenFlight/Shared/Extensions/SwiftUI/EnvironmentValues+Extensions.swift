@@ -29,10 +29,5 @@
 
 import SwiftUI
 
-/// Support `dismiss` below iOS15.
-@available(iOS 14.0, *)
-extension EnvironmentValues {
-    var dismiss: () -> Void {
-        { presentationMode.wrappedValue.dismiss() }
-    }
-}
+// Note: Native `@Environment(\.dismiss)` (DismissAction) is provided natively by SwiftUI in iOS 15+.
+
