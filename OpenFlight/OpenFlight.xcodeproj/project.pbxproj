@@ -236,7 +236,6 @@
 		51A5A55F2812ADD300C7FEB2 /* DroneDetailsBatteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A5A55E2812ADD300C7FEB2 /* DroneDetailsBatteryViewController.swift */; };
 		51A5A5622812AE6100C7FEB2 /* DroneDetailsBatteryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51A5A5612812AE6100C7FEB2 /* DroneDetailsBatteryViewController.storyboard */; };
 		51BA12DF28BF899A0008EB7C /* ParrotDebugViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA12DE28BF899A0008EB7C /* ParrotDebugViewModel.swift */; };
-		51D833649EDECD43AB73A476 /* Pods_OpenFlightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 167C98E28C574D9037B1A869 /* Pods_OpenFlightTests.framework */; };
 		584BE9282926898B00700581 /* DroneCalibrationMoreMissionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584BE9222926791B00700581 /* DroneCalibrationMoreMissionsProvider.swift */; };
 		58D7676129F7DAC400130D7F /* SettingsGeoFenceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D7676029F7DAC400130D7F /* SettingsGeoFenceCell.xib */; };
 		58D7676429F7DAD800130D7F /* SettingsGeoFenceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D7676329F7DAD800130D7F /* SettingsGeoFenceCell.swift */; };
@@ -494,7 +493,7 @@
 		70C8AEB72462E73900A0BE98 /* Thumbnail+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD427724597ADF0024CF92 /* Thumbnail+Utils.swift */; };
 		70D84B2C26F87E470001BD87 /* HUDCriticalAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E426A75C2547041000E8BA19 /* HUDCriticalAlert.storyboard */; };
 		70DA644424B76CA5007EC020 /* OGSpeedometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DA644324B76CA5007EC020 /* OGSpeedometer.swift */; };
-		70F1A10625B185B3008BA38A /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		70F1A10625B185B3008BA38A /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		7A0D5B68282A5ECA00400B3B /* UIApplication+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D5B67282A5ECA00400B3B /* UIApplication+Publisher.swift */; };
 		7A2CA11E27CCB6AA00FA4146 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CA11D27CCB6AA00FA4146 /* String+Regex.swift */; };
 		7A4C74C029A25D1600BF1A12 /* MetricLogsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4C74BF29A25D1600BF1A12 /* MetricLogsListView.swift */; };
@@ -655,7 +654,7 @@
 		84F3FB6C2447412D0073F77A /* DroneCalibrationAxesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F3FB682447412D0073F77A /* DroneCalibrationAxesView.xib */; };
 		84F3FB71244742580073F77A /* DroneCalibrationInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3FB6F244742580073F77A /* DroneCalibrationInstructionsView.swift */; };
 		84F3FB74244742580073F77A /* DroneCalibrationInstructionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F3FB70244742580073F77A /* DroneCalibrationInstructionsView.xib */; };
-		8F2EF8437C1839CF144266E2 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		8F2EF8437C1839CF144266E2 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		9B0F5D682552F6A000B56646 /* ParrotLogEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F5D672552F6A000B56646 /* ParrotLogEvent.swift */; };
 		9B1145CC25DC270300AFCB05 /* ParrotLogEvent+DebugLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1145CB25DC270300AFCB05 /* ParrotLogEvent+DebugLogs.swift */; };
 		9B13E306256C064200BFEB23 /* ParrotLogEvent+Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13E305256C064200BFEB23 /* ParrotLogEvent+Panel.swift */; };
@@ -760,7 +759,7 @@
 		AF416FD3267FD3E10063603C /* FlightPlanListHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF416FCF267FD3E10063603C /* FlightPlanListHeaderCell.xib */; };
 		AF416FD7267FDC770063603C /* FlightPlanListReusableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF416FD6267FDC770063603C /* FlightPlanListReusableHeaderView.swift */; };
 		AF540235266A3222006BF1CD /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF540233266A3219006BF1CD /* DashboardViewModel.swift */; };
-		AF540236266A670D006BF1CD /* (null) in Sources */ = {isa = PBXBuildFile; };
+		AF540236266A670D006BF1CD /* BuildFile in Sources */ = {isa = PBXBuildFile; };
 		AF540238266BF845006BF1CD /* DashboardDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF540237266BF845006BF1CD /* DashboardDataSource.swift */; };
 		AFA7192C2673489100389465 /* FlightPlansListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA7192B2673489100389465 /* FlightPlansListViewModel.swift */; };
 		AFD8A211268F88ED00457E15 /* FlightPlanDataSetting+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8A210268F88ED00457E15 /* FlightPlanDataSetting+Extension.swift */; };
@@ -774,6 +773,7 @@
 		C63E19D02689CBC000FFD2C4 /* FlightPlanDataSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8A1F02685F13C00457E15 /* FlightPlanDataSetting.swift */; };
 		C6939954BC0B8CEEC918116C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332679D16AC79A7495A57FD /* AppDelegate.swift */; };
 		C6BA0BD9268B60DA00A2566A /* ControllerInfosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4BA869237088ED00AEE0FC /* ControllerInfosViewModel.swift */; };
+		D16CAA1D799A5CC9D64EDE73 /* Pods_OpenFlightApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D25C52EA928A1E61C4E7B4E /* Pods_OpenFlightApp.framework */; };
 		E197EC492668E08B00FC1A15 /* DroneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E197EC482668E08B00FC1A15 /* DroneModel.swift */; };
 		E197EF70266BBC9B00FC1A15 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E197EF6F266BBC9B00FC1A15 /* ProjectModel.swift */; };
 		E197EF79266BBCC200FC1A15 /* FlightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E197EF78266BBCC200FC1A15 /* FlightModel.swift */; };
@@ -784,9 +784,9 @@
 		E1E05E1B268350B800E221E1 /* JsonDecoder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E05E1A268350B800E221E1 /* JsonDecoder+Extension.swift */; };
 		E332AFF1240431E100ED246E /* ProvidersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332AFF0240431E100ED246E /* ProvidersProtocols.swift */; };
 		E332AFF324057A1C00ED246E /* MissionsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332AFF224057A1C00ED246E /* MissionsStore.swift */; };
-		E341E805235DE75400C1F1C8 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		E341E806235DE75B00C1F1C8 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		E341E807235DE79F00C1F1C8 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		E341E805235DE75400C1F1C8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		E341E806235DE75B00C1F1C8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		E341E807235DE79F00C1F1C8 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
 		E34F8A972359F78A00F711D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E34F8A952359F78A00F711D9 /* InfoPlist.strings */; };
 		E34F8A9A2359FC0500F711D9 /* HUDCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A992359FC0500F711D9 /* HUDCoordinator.swift */; };
 		E34F8A9E2359FC8B00F711D9 /* HUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34F8A9C2359FC8B00F711D9 /* HUDViewController.swift */; };
@@ -1278,7 +1278,7 @@
 
 /* Begin PBXFileReference section */
 		137BC5C9265291F0007906D6 /* CLLocation+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Utils.swift"; sourceTree = "<group>"; };
-		167C98E28C574D9037B1A869 /* Pods_OpenFlightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFlightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B9EC50DB479C9CD6BEEBF43 /* Pods-OpenFlightApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFlightApp.release.xcconfig"; path = "Target Support Files/Pods-OpenFlightApp/Pods-OpenFlightApp.release.xcconfig"; sourceTree = "<group>"; };
 		220A103B270B3C3E00966BD5 /* DashboardSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSettingsCell.swift; sourceTree = "<group>"; };
 		220A103D270B3C8200966BD5 /* DashboardSettingsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardSettingsCell.xib; sourceTree = "<group>"; };
 		228BC57C26FA213300E1869A /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
@@ -1533,6 +1533,7 @@
 		58D7676629F9633B00130D7F /* SliderSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSetting.swift; sourceTree = "<group>"; };
 		58D7676929FA7DCC00130D7F /* SettingsCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellType.swift; sourceTree = "<group>"; };
 		58EC8B822A40ADEB00EC1B80 /* SliderHighlightedRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderHighlightedRange.swift; sourceTree = "<group>"; };
+		5D25C52EA928A1E61C4E7B4E /* Pods_OpenFlightApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenFlightApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		682355082680CAB3000E98F3 /* ExposureLockViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExposureLockViewModel.swift; sourceTree = "<group>"; };
 		6835F78A270F1F2A008E8B51 /* MapElevationSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapElevationSource.swift; sourceTree = "<group>"; };
 		685D93732715DEA9005CA99A /* TrajectoryPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrajectoryPoint.swift; sourceTree = "<group>"; };
@@ -1584,6 +1585,7 @@
 		6A3CCB3723E2E7BD00D3DF19 /* sample_jemmapes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_jemmapes.json; sourceTree = "<group>"; };
 		6A45F045241A7119003F6F66 /* ModelV4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModelV4.xcdatamodel; sourceTree = "<group>"; };
 		6A4C324423856B8B00F54F8A /* RemoteControlAxisButtonGrabber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlAxisButtonGrabber.swift; sourceTree = "<group>"; };
+		6A5D19BB628F8040218B7254 /* Pods-OpenFlightApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenFlightApp.debug.xcconfig"; path = "Target Support Files/Pods-OpenFlightApp/Pods-OpenFlightApp.debug.xcconfig"; sourceTree = "<group>"; };
 		6A5DE01A23CDCB7B007523EF /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		6A5DE01D23CDD1C8007523EF /* AGSMultipart+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AGSMultipart+Utils.swift"; sourceTree = "<group>"; };
 		6A5DE01F23CDD4B8007523EF /* ArgGIS+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArgGIS+Constants.swift"; sourceTree = "<group>"; };
@@ -2571,13 +2573,14 @@
 				4B63D9EE296C4FCB00B32A2F /* Pictor.framework in Frameworks */,
 				FB8DC76C23605066005C6378 /* GLKit.framework in Frameworks */,
 				FB8DC76A2360505C005C6378 /* OpenGLES.framework in Frameworks */,
-				E341E806235DE75B00C1F1C8 /* (null) in Frameworks */,
-				E341E805235DE75400C1F1C8 /* (null) in Frameworks */,
-				70F1A10625B185B3008BA38A /* (null) in Frameworks */,
+				E341E806235DE75B00C1F1C8 /* BuildFile in Frameworks */,
+				E341E805235DE75400C1F1C8 /* BuildFile in Frameworks */,
+				70F1A10625B185B3008BA38A /* BuildFile in Frameworks */,
 				AAB6D5869984351348373CFE /* Foundation.framework in Frameworks */,
-				E341E807235DE79F00C1F1C8 /* (null) in Frameworks */,
-				8F2EF8437C1839CF144266E2 /* (null) in Frameworks */,
+				E341E807235DE79F00C1F1C8 /* BuildFile in Frameworks */,
+				8F2EF8437C1839CF144266E2 /* BuildFile in Frameworks */,
 				4B01B52A296C17E000B0C9A9 /* Pictor.framework in Frameworks */,
+				D16CAA1D799A5CC9D64EDE73 /* Pods_OpenFlightApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2585,7 +2588,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51D833649EDECD43AB73A476 /* Pods_OpenFlightTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2997,7 +2999,7 @@
 				FB8DC7692360505C005C6378 /* OpenGLES.framework */,
 				7C9C848F9BC4ABD7EB23FAF0 /* iOS */,
 				556BD70B2A7312804E2DA8E8 /* Pods_OpenFlight.framework */,
-				167C98E28C574D9037B1A869 /* Pods_OpenFlightTests.framework */,
+				5D25C52EA928A1E61C4E7B4E /* Pods_OpenFlightApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -3018,6 +3020,16 @@
 				6A0460D92437606700F4B828 /* Paths.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		62A2DBBCDF82B14E2DB14121 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B9EC50DB479C9CD6BEEBF43 /* Pods-OpenFlightApp.release.xcconfig */,
+				6A5D19BB628F8040218B7254 /* Pods-OpenFlightApp.debug.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		686361502A4D765C00298BAA /* Generated */ = {
@@ -4597,6 +4609,7 @@
 				70861D31281991130032C950 /* OpenFlightTests */,
 				4F122B6CAECCF00716080E39 /* Frameworks */,
 				74DBDC0777E690BD87F31529 /* Products */,
+				62A2DBBCDF82B14E2DB14121 /* Pods */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -6502,11 +6515,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70861D38281991130032C950 /* Build configuration list for PBXNativeTarget "OpenFlightTests" */;
 			buildPhases = (
-				DE851FE83CB561EFF0458C98 /* [CP] Check Pods Manifest.lock */,
 				70861D2C281991120032C950 /* Sources */,
 				70861D2D281991120032C950 /* Frameworks */,
 				70861D2E281991120032C950 /* Resources */,
-				EBAE79E6C4E04FB3B45FC71D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -6920,45 +6931,6 @@
 			shellPath = /bin/sh;
 			shellScript = "KEYWORDS=\"TODO:|FIXME:\"\necho \"searching ${SRCROOT} for ${KEYWORDS}\"\nfind \"${SRCROOT}\" \\( -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
 		};
-		DE851FE83CB561EFF0458C98 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OpenFlightTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EBAE79E6C4E04FB3B45FC71D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OpenFlightTests/Pods-OpenFlightTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-OpenFlightTests/Pods-OpenFlightTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenFlightTests/Pods-OpenFlightTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -7331,7 +7303,7 @@
 				E35E4FB5235D97D500866AD4 /* SettingsCoordinator.swift in Sources */,
 				F8BC29C42613592B00ED7850 /* DashboardLogoCell.swift in Sources */,
 				C6939954BC0B8CEEC918116C /* AppDelegate.swift in Sources */,
-				AF540236266A670D006BF1CD /* (null) in Sources */,
+				AF540236266A670D006BF1CD /* BuildFile in Sources */,
 				6A0460D02433807400F4B828 /* UIViewController+Utils.swift in Sources */,
 				9B20326B257596AB00A12924 /* RemoteShutdownAlertViewController.swift in Sources */,
 				E37989AD241131C1006A91C3 /* AccountManager.swift in Sources */,

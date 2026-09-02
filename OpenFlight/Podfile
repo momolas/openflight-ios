@@ -2,17 +2,17 @@ platform :ios, '26.0'
 
 target 'OpenFlightApp' do
   use_frameworks!
-  pod 'GroundSdk', '7.7.0'
-  pod 'ArsdkEngine', '7.7.0'
-  pod 'SdkCore', '7.7.0'
-  pod 'OpenFlightCore', '7.7.0'
-  pod 'SwiftGen', '6.5.1'
-  pod 'SwiftLint', '0.50.3'
-  pod 'Reusable', '4.1.2'
-  pod 'SwiftyUserDefaults', '5.3.0'
-  pod 'KeychainAccess', '4.2.2'
-  pod 'lottie-ios', '4.0.1'
-  pod 'ArcGIS-Runtime-SDK-iOS', '~> 100.15'
+  pod 'GroundSdk'
+  pod 'ArsdkEngine'
+  pod 'SdkCore'
+  pod 'OpenFlightCore'
+  pod 'SwiftGen'
+  pod 'SwiftLint'
+  pod 'Reusable'
+  pod 'SwiftyUserDefaults'
+  pod 'KeychainAccess'
+  pod 'lottie-ios'
+  pod 'ArcGIS-Runtime-SDK-iOS'
 end
 
 post_install do |installer|
@@ -24,4 +24,3 @@ post_install do |installer|
           end
    end
 end
-                                                                                                                                                                       

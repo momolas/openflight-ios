@@ -1,0 +1,71 @@
+PODS:
+  - ArcGIS-Runtime-SDK-iOS (100.15.6)
+  - ArsdkEngine (8.4.2):
+    - GroundSdk (= 8.4.2)
+    - SwiftProtobuf (= 1.13.0)
+  - GroundSdk (8.4.2):
+    - GroundSdk/Proto (= 8.4.2)
+    - SdkCore (= 8.4.2)
+    - SwiftProtobuf (= 1.13.0)
+  - GroundSdk/Proto (8.4.2):
+    - SdkCore (= 8.4.2)
+    - SwiftProtobuf (= 1.13.0)
+  - KeychainAccess (4.2.2)
+  - lottie-ios (4.6.1)
+  - OpenFlightCore (7.7.0)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - SdkCore (8.4.2)
+  - SwiftGen (6.6.3)
+  - SwiftLint (0.65.1)
+  - SwiftProtobuf (1.13.0)
+  - SwiftyUserDefaults (5.3.0)
+
+DEPENDENCIES:
+  - ArcGIS-Runtime-SDK-iOS
+  - ArsdkEngine
+  - GroundSdk
+  - KeychainAccess
+  - lottie-ios
+  - OpenFlightCore
+  - Reusable
+  - SdkCore
+  - SwiftGen
+  - SwiftLint
+  - SwiftyUserDefaults
+
+SPEC REPOS:
+  trunk:
+    - ArcGIS-Runtime-SDK-iOS
+    - ArsdkEngine
+    - GroundSdk
+    - KeychainAccess
+    - lottie-ios
+    - OpenFlightCore
+    - Reusable
+    - SdkCore
+    - SwiftGen
+    - SwiftLint
+    - SwiftProtobuf
+    - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  ArcGIS-Runtime-SDK-iOS: fb542c808b80e57dd9cfa8ba1a6a201eb9896418
+  ArsdkEngine: ed2a444639e2cdf08cf2a45e80fb6357f0c7f941
+  GroundSdk: a08f9a6bda9832ebab061cad6c185c0306b2485d
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  lottie-ios: 6467ca7035120c5b0e0acee58bb679cf15875686
+  OpenFlightCore: 0e4f22d75ea94be0e888a77bbef8bf8fb701f6a6
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  SdkCore: 3c812a63fc9ebd3363f44756d8724a957e287053
+  SwiftGen: 4993cbf71cbc4886f775e26f8d5c3a1188ec9f99
+  SwiftLint: 7d51ad56923e88694cee5ca806dbbab30f85eaaa
+  SwiftProtobuf: fd4693388a96c8c2df35d3b063272b0e7c499d00
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+
+PODFILE CHECKSUM: b440f3e401228fb2aa44d637022293b80926ef9d
+
+COCOAPODS: 1.15.2
