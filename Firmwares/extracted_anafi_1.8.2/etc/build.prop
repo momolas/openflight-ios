@@ -1,0 +1,12 @@
+ro.build.date=Mon Sep  6 08:50:34 UTC 2021
+ro.build.date.utc=1630918234
+ro.build.alchemy.product=anafi
+ro.build.alchemy.variant=4k
+ro.build.hostname=jenkins
+ro.parrot.build.group=drones
+ro.parrot.build.project=anafi
+ro.parrot.build.product=anafi
+ro.parrot.build.variant=4k
+ro.parrot.build.region=
+ro.parrot.build.uid=anafi-4k-1.8.2
+ro.parrot.build.version=1.8.2
