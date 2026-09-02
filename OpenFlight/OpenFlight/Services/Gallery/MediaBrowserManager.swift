@@ -35,6 +35,7 @@ private extension ULogTag {
 }
 
 /// A manager for gallery medias browsing.
+@MainActor
 final class MediaBrowserManager {
 
     /// The media services.
@@ -234,10 +235,8 @@ extension MediaBrowserManager {
                 try await mediaListService.delete(medias: [activeMedia])
             } catch {
                 let message = activeMedia.source.deleteErrorMessage(count: 1)
-                DispatchQueue.main.async {
-                    self.delegate?.showActionErrorAlert(message: message,
-                                                        retryAction: self.deleteActiveMedia)
-                }
+                self.delegate?.showActionErrorAlert(message: message,
+                                                    retryAction: self.deleteActiveMedia)
             }
             stop(action: .delete)
         }
@@ -260,13 +259,11 @@ extension MediaBrowserManager {
                 try await mediaListService.deleteResources(of: activeMedia, at: indexes)
             } catch {
                 let message = activeMedia.source.deleteErrorMessage(count: 1)
-                DispatchQueue.main.async {
-                    self.delegate?.showActionErrorAlert(message: message,
-                                                        retryAction: self.deleteActiveResource)
-                }
+                self.delegate?.showActionErrorAlert(message: message,
+                                                    retryAction: self.deleteActiveResource)
             }
+            stop(action: .delete)
         }
-        stop(action: .delete)
     }
 
     /// Fetches a media's resource located at a specific index.
@@ -313,10 +310,8 @@ extension MediaBrowserManager {
         start(action: .download)
         Task {
             for await status in mediaListService.download(medias: [activeMedia]) where status == .error {
-                DispatchQueue.main.async {
-                    self.delegate?.showActionErrorAlert(message: L10n.galleryDownloadError,
-                                                        retryAction: self.didTapDownload)
-                }
+                self.delegate?.showActionErrorAlert(message: L10n.galleryDownloadError,
+                                                    retryAction: self.didTapDownload)
             }
         }
         stop(action: .download)
@@ -369,10 +364,8 @@ extension MediaBrowserManager {
     func didTapShare(srcView: UIView) {
         guard let delegate = delegate, let urls = shareableResourcesUrls else { return }
         start(action: .share)
-        DispatchQueue.main.async { [weak self] in
-            delegate.showSharingScreen(fromView: srcView, items: urls) {
-                self?.stop(action: .share)
-            }
+        delegate.showSharingScreen(fromView: srcView, items: urls) { [weak self] in
+            self?.stop(action: .share)
         }
     }
 }

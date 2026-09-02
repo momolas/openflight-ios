@@ -954,8 +954,8 @@ extension FlightPlanGraphicsOverlay {
             ULog.i(.tag, "Start Graphics Generation. Degraded display: \(degradedMode)")
             // In any cases, refresh the map centering at the end of the process.
             defer {
-                DispatchQueue.main.async {
-                    if shouldReloadCamera { self.flightPlanViewModel.refreshViewPoint.value = true }
+                Task { @MainActor [weak self] in
+                    if shouldReloadCamera { self?.flightPlanViewModel.refreshViewPoint.value = true }
                 }
             }
             // Generate all graphics.

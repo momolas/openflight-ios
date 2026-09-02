@@ -247,9 +247,7 @@ private extension PhotoViewerViewController {
             clearRefetchTask()
         }
 
-        DispatchQueue.main.async {
-            cell.configure(image: image)
-        }
+        cell.configure(image: image)
         browserManager.startPrefetch(for: viewModel.media, around: resourceIndex)
     }
 
@@ -267,7 +265,7 @@ private extension PhotoViewerViewController {
             ULog.i(.tag, "[galleryRework] Refetch \(resourceIndex).")
             try await fetch(cell: cell,
                             at: resourceIndex,
-                            after: Constants.refetchDelay * 1_000_000_000,
+                            after: Constants.refetchDelay,
                             clearRefetch: false)
         }
     }

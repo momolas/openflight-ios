@@ -240,7 +240,7 @@ extension MediaListServiceImpl: MediaListService {
                                                                            onlyDownloadable: true)
 
         if let delay = delay {
-            try await Task.sleep(for: .nanoseconds(delay))
+            try await Task.sleep(for: .seconds(delay))
         }
 
         // Download preview and gather URL.
